@@ -1,0 +1,32 @@
+{
+  "namespace": "de.reondo.avro",
+  "type": "record",
+  "name": "Customer",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "favorite_number",
+      "type": [
+        "int",
+        "null"
+      ]
+    },
+    {
+      "name": "favorite_color",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "has_subscription",
+      "type": [
+        "boolean", "null"
+      ],
+      "default": true
+    }
+  ]
+}
